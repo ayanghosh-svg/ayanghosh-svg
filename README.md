@@ -44,8 +44,8 @@ Hi! I'm **Ayan Ghosh**, an Electronics & Communication Engineering student at **
 ## 📊 GitHub Stats
 
 <div align="center">
-<img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=ayanghosh-svg&show_icons=true&theme=tokyonight&hide_border=true" />
-<img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=ayanghosh-svg&layout=compact&theme=tokyonight&hide_border=true" />
+<img height="165" src="https://github-readme-stats-mu-seven-w0xc68swfu.vercel.app/api?username=ayanghosh-svg&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="165" src="https://github-readme-stats-mu-seven-w0xc68swfu.vercel.app/api/top-langs/?username=ayanghosh-svg&layout=compact&theme=tokyonight&hide_border=true" />
 </div>
 
 ---
