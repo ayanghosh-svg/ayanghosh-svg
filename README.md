@@ -63,6 +63,7 @@ Hi! I'm **Ayan Ghosh**, an Electronics & Communication Engineering student at **
 ## 🤝 Connect With Me
 
 <div align="center">
+<a href="https://ayanghosh-svg.github.io"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
 <a href="https://github.com/ayanghosh-svg"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=reenaranighosh1974@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/ayan-ghosh-a32b64388/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
