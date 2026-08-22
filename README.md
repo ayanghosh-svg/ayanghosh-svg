@@ -37,9 +37,8 @@ Hi! I'm **Ayan Ghosh**, an Electronics & Communication Engineering student at **
 
 ## 🔥 GitHub Streak
 
-<div align="center">
-<img src="https://streak-stats.demolab.com/?user=ayanghosh-svg&theme=tokyonight&hide_border=true" />
-</div>
+https://streak-stats.demolab.com/?user=ayanghosh-svg&theme=tokyonight&hide_border=true
+
 
 ## 📊 GitHub Stats
 
