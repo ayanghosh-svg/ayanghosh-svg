@@ -1,33 +1,57 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&section=header&text=Ayan%20Ghosh&fontSize=45&fontColor=ffffff&animation=fadeIn" />
-
-<img src="https://img.shields.io/badge/%F0%9F%91%8B_HI_THERE-I'm_Ayan-0e75b6?style=for-the-badge&labelColor=111827" />
-<img src="https://img.shields.io/badge/%F0%9F%8E%93_ECE_STUDENT-1E293B?style=for-the-badge" />
-<img src="https://img.shields.io/badge/%F0%9F%92%BB_SOFTWARE_%26_HARDWARE-00C785?style=for-the-badge" />
+```
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║   PART NO.        : AYAN-GHOSH-ECE-v3                             ║
+║   PACKAGE TYPE     : Human, ECE Undergraduate                     ║
+║   FUNCTION         : Software & Hardware Co-Design Unit           ║
+║   MANUFACTURER     : Narula Institute of Technology                ║
+║   STATUS           : ACTIVE — In Development (Year 3 of 4)        ║
+║                                                                    ║
+╚══════════════════════════════════════════════════════════════════╝
+```
 
 </div>
 
+<br>
+
+## `§1` GENERAL DESCRIPTION
+
+> The **AYAN-GHOSH-ECE-v3** is a dual-domain processing unit engineered to
+> operate across both software and hardware layers. Optimized for embedded
+> systems design, VLSI architecture, and robotics integration, this unit
+> exhibits stable performance under hackathon-load conditions and continuous
+> self-updating firmware (a.k.a. "learning new things").
+
+```diff
++ Core competencies : Software Engineering | Embedded Systems | Digital Electronics
++ Operating mode    : Full-stack across the stack — silicon to syntax
+! Note              : Unit is still in active calibration (3rd year, ECE)
+```
+
 ---
 
-## 👋 About Me
+## `§2` PIN CONFIGURATION
 
-Hi! I'm **Ayan Ghosh**, an Electronics & Communication Engineering student at **Narula Institute of Technology**.
+<div align="center">
 
-- 🎓 ECE student passionate about Software & Hardware Development
-- 💻 Exploring Java, Python, SQL, Web Development, and AI/ML
-- 🔧 Interested in Embedded Systems, Electronics, IoT, and Hardware Development
-- 🤖 Enjoy building projects that combine software, electronics, and intelligent systems
-- 🏆 Interested in hackathons, innovative projects, and real-world problem solving
-- 🌱 Continuously learning and improving my technical skills
-- 🚀 My goal is to become a good, well-rounded engineer who understands and can work with both software and hardware
-- 💡 I believe the best solutions come from combining strong programming skills with solid hardware knowledge
+```
+                         ┌─────────────────────┐
+                 JAVA ●──┤ 1                 20 ├──● PYTHON
+                MYSQL ●──┤ 2                 19 ├──● SQL
+                 HTML ●──┤ 3      AYAN-      18 ├──● CSS
+                   JS ●──┤ 4      GHOSH      17 ├──● GIT
+                  GIT ●──┤ 5      ECE-v3     16 ├──● GITHUB
+              VS CODE ●──┤ 6                 15 ├──● ARDUINO
+                  IOT ●──┤ 7                 14 ├──● EMBEDDED
+                VLSI ●──┤ 8                 13 ├──● ROBOTICS
+                      ●──┤ 9                 12 ├──●
+                      ●──┤ 10                11 ├──●
+                         └─────────────────────┘
+```
 
-> "Building my skills across both software and hardware, one project at a time."
-
----
-
-## 🛠️ Languages & Tools
+</div>
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=java,mysql,py,html,css,js,git,github,vscode,arduino" />
@@ -35,33 +59,70 @@ Hi! I'm **Ayan Ghosh**, an Electronics & Communication Engineering student at **
 
 ---
 
-
-
-
-## 📊 GitHub Stats
+## `§3` ELECTRICAL CHARACTERISTICS (GitHub Stats)
 
 <div align="center">
 <img height="165" src="https://github-readme-stats-mu-seven-w0xc68swfu.vercel.app/api?username=ayanghosh-svg&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
 <img height="165" src="https://github-readme-stats-mu-seven-w0xc68swfu.vercel.app/api/top-langs/?username=ayanghosh-svg&layout=compact&theme=tokyonight&hide_border=true" />
 </div>
 
----
-
-## 🎯 Career Goals
-
-- 💻 Grow into a well-rounded Software & Hardware Engineer
-- 🔧 Build hands-on expertise in Embedded Systems & IoT
-- 🧠 Strengthen DSA, SQL, and problem-solving skills
-- 🏆 Take part in hackathons and real-world engineering challenges
-- 🌐 Contribute to open-source and collaborative projects
+| Parameter              | Symbol | Min | Typ | Max | Unit          |
+|-------------------------|--------|-----|-----|-----|---------------|
+| Curiosity level          | I_CUR  | 8   | 9.5 | 10  | learners/day  |
+| Coffee-to-code ratio     | K_COF  | 1   | 2   | ∞   | cups/commit   |
+| Hardware-software balance| BAL    | —   | 50  | —   | % / %         |
+| Debug tolerance          | T_DBG  | 2   | 5   | 12  | hrs           |
 
 ---
 
-## 🤝 Connect With Me
+## `§4` APPLICATIONS (Focus Areas)
+
+```
+[ VLSI / EMBEDDED SYSTEMS ]──┬──> Digital circuit design, low-level firmware
+[ ROBOTICS ]──────────────────┤──> Sensor integration, control systems
+[ DIGITAL ELECTRONICS ]───────┤──> Logic design, IoT prototyping
+[ SOFTWARE ENGINEERING ]──────┴──> Java · Python · SQL · Web Dev · AI/ML
+```
+
+**Roadmap / Absolute Maximum Ratings (Career Goals):**
+- `[TARGET]` Well-rounded Software & Hardware Engineer
+- `[TARGET]` Hands-on expertise in Embedded Systems & IoT
+- `[TARGET]` Strengthened DSA, SQL, and problem-solving stack
+- `[TARGET]` Hackathon deployments and real-world engineering trials
+- `[TARGET]` Open-source contribution history
+
+---
+
+## `§5` REVISION HISTORY
+
+| Rev | Date       | Description                                  |
+|-----|------------|-----------------------------------------------|
+| v1  | Year 1     | Initial power-on. Learned syntax fundamentals |
+| v2  | Year 2     | Added hardware I/O — Arduino, digital logic   |
+| v3  | Year 3 *(current)* | Integrating VLSI, robotics, IoT modules |
+| v4  | Year 4 *(planned)* | Full-stack hardware-software deployment|
+
+---
+
+## `§6` ORDERING INFORMATION (Contact)
 
 <div align="center">
-<a href="https://ayanghosh-svg.github.io"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-<a href="https://github.com/ayanghosh-svg"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=reenaranighosh1974@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://www.linkedin.com/in/ayan-ghosh-a32b64388/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+
+| Channel | Link |
+|---|---|
+| 🌐 Portfolio | [ayanghosh-svg.github.io](https://ayanghosh-svg.github.io) |
+| 💻 GitHub | [@ayanghosh-svg](https://github.com/ayanghosh-svg) |
+| 🔗 LinkedIn | [ayan-ghosh](https://www.linkedin.com/in/ayan-ghosh-a32b64388/) |
+
+</div>
+
+<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════════╗
+║  END OF DATASHEET — Subject to change without notice (I'm still  ║
+║  learning). For collaboration inquiries, see §6 above.           ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
 </div>
