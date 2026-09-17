@@ -36,22 +36,7 @@
 
 <div align="center">
 
-```
-      VCC (Curiosity)
-        │
-        ▼
-   ┌────┴────┐        ┌──────────┐        ┌───────────┐
-   │  INPUT  │        │  CORE    │        │  OUTPUT   │
-   │ STAGE   ├───────►│  LOGIC   ├───────►│  STAGE    │
-   │(Learning)│        │(ECE + CS)│        │(Projects) │
-   └────┬────┘        └────┬─────┘        └─────┬─────┘
-        │                  │                     │
-       ═╪═ R1            ═╪═ C1                 ═╪═ LED
-       GND              (buffer:               (output
-                          coffee)                indicator)
-                                                    │
-                                                   GND
-```
+<img src="schematic.svg" width="100%" alt="Schematic Diagram" />
 
 </div>
 
@@ -67,33 +52,7 @@
 
 <div align="center">
 
-```
-                    ┌───────────────────────────┐
-                    │        AYAN-GHOSH          │
-                    │          ECE-v3            │
-                    │      20-PIN DIP PACKAGE     │
-                    └───────────────────────────┘
-
-  GROUP A — LANGUAGES          GROUP B — TOOLS & PLATFORMS
-  ┌─────────────────┐         ┌─────────────────┐
-  │  1 ●── JAVA      │         │ 11 ●── GIT       │
-  │  2 ●── PYTHON    │         │ 12 ●── GITHUB    │
-  │  3 ●── SQL       │         │ 13 ●── VS CODE   │
-  │  4 ●── HTML      │         │ 14 ●── ARDUINO   │
-  │  5 ●── CSS       │         └─────────────────┘
-  │  6 ●── JS        │
-  └─────────────────┘         GROUP C — HARDWARE / EMBEDDED
-                               ┌─────────────────┐
-                               │ 15 ●── VLSI      │
-                               │ 16 ●── EMBEDDED  │
-                               │ 17 ●── ROBOTICS  │
-                               │ 18 ●── DIGITAL   │
-                               │        ELECTRONICS│
-                               │ 19 ●── IOT       │
-                               └─────────────────┘
-
-  NC (No Connect) ── PIN 20 ── reserved for next skill acquired
-```
+<img src="pin_diagram.svg" width="100%" alt="Pin Diagram" />
 
 </div>
 

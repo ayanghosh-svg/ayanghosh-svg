@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .trace { stroke: #00ff9c; stroke-width: 2.5; fill: none; }
+      .trace-cyan { stroke: #00d4ff; stroke-width: 2.5; fill: none; }
+      .pad { fill: #00ff9c; }
+      .box { fill: #0f1a14; stroke: #00ff9c; stroke-width: 2; }
+      .boxtitle { font-family: 'Courier New', monospace; font-weight: bold; fill: #eafff5; font-size: 18px; }
+      .boxsub { font-family: 'Courier New', monospace; fill: #7de3c8; font-size: 13px; }
+      .complabel { font-family: 'Courier New', monospace; fill: #3d5a52; font-size: 13px; }
+      .vcc { font-family: 'Courier New', monospace; fill: #00d4ff; font-size: 14px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#bg)"/>
+
+  <!-- VCC label + line down -->
+  <text x="600" y="35" text-anchor="middle" class="vcc">VCC (CURIOSITY)</text>
+  <line x1="600" y1="45" x2="600" y2="80" class="trace-cyan"/>
+  <polygon points="594,75 606,75 600,88" fill="#00d4ff"/>
+
+  <!-- three stage boxes -->
+  <g filter="url(#glow)">
+    <rect x="90" y="95" width="260" height="110" rx="8" class="box"/>
+    <text x="220" y="140" text-anchor="middle" class="boxtitle">INPUT STAGE</text>
+    <text x="220" y="165" text-anchor="middle" class="boxsub">(Learning)</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <rect x="470" y="95" width="260" height="110" rx="8" class="box"/>
+    <text x="600" y="140" text-anchor="middle" class="boxtitle">CORE LOGIC</text>
+    <text x="600" y="165" text-anchor="middle" class="boxsub">(ECE + CS)</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <rect x="850" y="95" width="260" height="110" rx="8" class="box"/>
+    <text x="980" y="140" text-anchor="middle" class="boxtitle">OUTPUT STAGE</text>
+    <text x="980" y="165" text-anchor="middle" class="boxsub">(Projects)</text>
+  </g>
+
+  <!-- connecting traces between boxes -->
+  <line x1="350" y1="150" x2="470" y2="150" class="trace"/>
+  <polygon points="460,144 460,156 472,150" fill="#00ff9c"/>
+  <line x1="730" y1="150" x2="850" y2="150" class="trace"/>
+  <polygon points="840,144 840,156 852,150" fill="#00ff9c"/>
+
+  <!-- component drop lines -->
+  <line x1="220" y1="205" x2="220" y2="260" class="trace"/>
+  <circle cx="220" cy="245" r="4" class="pad"/>
+  <text x="220" y="290" text-anchor="middle" class="complabel">R1 — GND</text>
+
+  <line x1="600" y1="205" x2="600" y2="260" class="trace-cyan"/>
+  <circle cx="600" cy="245" r="4" fill="#00d4ff"/>
+  <text x="600" y="290" text-anchor="middle" class="complabel">C1 — buffer (coffee)</text>
+
+  <line x1="980" y1="205" x2="980" y2="260" class="trace"/>
+  <circle cx="980" cy="245" r="4" class="pad">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="980" y="290" text-anchor="middle" class="complabel">LED — output indicator</text>
+  <line x1="980" y1="300" x2="980" y2="330" class="trace"/>
+  <text x="980" y="355" text-anchor="middle" class="complabel">GND</text>
+
+</svg>

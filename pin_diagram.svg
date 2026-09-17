@@ -1,0 +1,136 @@
+<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .trace { stroke: #00ff9c; stroke-width: 2; fill: none; }
+      .trace-cyan { stroke: #00d4ff; stroke-width: 2; fill: none; }
+      .pad { fill: #00ff9c; }
+      .pad-cyan { fill: #00d4ff; }
+      .chip { fill: #0f1a14; stroke: #00ff9c; stroke-width: 2; }
+      .grouphdr { font-family: 'Courier New', monospace; font-weight: bold; fill: #00d4ff; font-size: 20px; letter-spacing: 1px; }
+      .pinlabel { font-family: 'Courier New', monospace; fill: #eafff5; font-size: 18px; }
+      .pinnum { font-family: 'Courier New', monospace; fill: #7de3c8; font-size: 14px; }
+      .chiptext { font-family: 'Courier New', monospace; font-weight: bold; fill: #eafff5; font-size: 22px; }
+      .chipsub { font-family: 'Courier New', monospace; fill: #7de3c8; font-size: 14px; }
+      .note { font-family: 'Courier New', monospace; fill: #3d5a52; font-size: 14px; }
+      .box { fill: none; stroke: #143026; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+
+  <!-- Center chip -->
+  <g filter="url(#glow)">
+    <rect x="470" y="40" width="260" height="90" rx="8" class="chip"/>
+    <text x="600" y="75" text-anchor="middle" class="chiptext">AYAN-GHOSH ECE-v3</text>
+    <text x="600" y="98" text-anchor="middle" class="chipsub">20-PIN DIP PACKAGE</text>
+    <circle cx="490" cy="55" r="4" class="pad"/>
+  </g>
+
+  <!-- GROUP A: LANGUAGES (left, pins 1-6) -->
+  <text x="70" y="190" class="grouphdr">GROUP A — LANGUAGES</text>
+  <rect x="70" y="210" width="280" height="240" rx="6" class="box"/>
+  <!-- pin rows -->
+  <g>
+    <circle cx="95" cy="245" r="5" class="pad"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.1s" repeatCount="indefinite"/></circle>
+    <line x1="100" y1="245" x2="125" y2="245" class="trace"/>
+    <text x="135" y="251" class="pinnum">1</text>
+    <text x="160" y="251" class="pinlabel">JAVA</text>
+
+    <circle cx="95" cy="280" r="5" class="pad"><animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <line x1="100" y1="280" x2="125" y2="280" class="trace"/>
+    <text x="135" y="286" class="pinnum">2</text>
+    <text x="160" y="286" class="pinlabel">PYTHON</text>
+
+    <circle cx="95" cy="315" r="5" class="pad"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+    <line x1="100" y1="315" x2="125" y2="315" class="trace"/>
+    <text x="135" y="321" class="pinnum">3</text>
+    <text x="160" y="321" class="pinlabel">SQL</text>
+
+    <circle cx="95" cy="350" r="5" class="pad"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+    <line x1="100" y1="350" x2="125" y2="350" class="trace"/>
+    <text x="135" y="356" class="pinnum">4</text>
+    <text x="160" y="356" class="pinlabel">HTML</text>
+
+    <circle cx="95" cy="385" r="5" class="pad"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.3s" repeatCount="indefinite"/></circle>
+    <line x1="100" y1="385" x2="125" y2="385" class="trace"/>
+    <text x="135" y="391" class="pinnum">5</text>
+    <text x="160" y="391" class="pinlabel">CSS</text>
+
+    <circle cx="95" cy="420" r="5" class="pad-cyan"><animate attributeName="opacity" values="1;0.4;1" dur="1.9s" repeatCount="indefinite"/></circle>
+    <line x1="100" y1="420" x2="125" y2="420" class="trace-cyan"/>
+    <text x="135" y="426" class="pinnum">6</text>
+    <text x="160" y="426" class="pinlabel">JAVASCRIPT</text>
+  </g>
+
+  <!-- GROUP B: TOOLS & PLATFORMS (right top, pins 11-14) -->
+  <text x="850" y="190" class="grouphdr">GROUP B — TOOLS</text>
+  <rect x="850" y="210" width="280" height="170" rx="6" class="box"/>
+  <g>
+    <circle cx="1105" cy="245" r="5" class="pad-cyan"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/></circle>
+    <line x1="1075" y1="245" x2="1100" y2="245" class="trace-cyan"/>
+    <text x="875" y="251" class="pinnum">11</text>
+    <text x="915" y="251" class="pinlabel">GIT</text>
+
+    <circle cx="1105" cy="280" r="5" class="pad-cyan"><animate attributeName="opacity" values="1;0.4;1" dur="1.7s" repeatCount="indefinite"/></circle>
+    <line x1="1075" y1="280" x2="1100" y2="280" class="trace-cyan"/>
+    <text x="875" y="286" class="pinnum">12</text>
+    <text x="915" y="286" class="pinlabel">GITHUB</text>
+
+    <circle cx="1105" cy="315" r="5" class="pad-cyan"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/></circle>
+    <line x1="1075" y1="315" x2="1100" y2="315" class="trace-cyan"/>
+    <text x="875" y="321" class="pinnum">13</text>
+    <text x="915" y="321" class="pinlabel">VS CODE</text>
+
+    <circle cx="1105" cy="350" r="5" class="pad-cyan"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+    <line x1="1075" y1="350" x2="1100" y2="350" class="trace-cyan"/>
+    <text x="875" y="356" class="pinnum">14</text>
+    <text x="915" y="356" class="pinlabel">ARDUINO</text>
+  </g>
+
+  <!-- GROUP C: HARDWARE / EMBEDDED (right bottom, pins 15-19) -->
+  <text x="850" y="420" class="grouphdr">GROUP C — HARDWARE</text>
+  <rect x="850" y="440" width="280" height="210" rx="6" class="box"/>
+  <g>
+    <circle cx="1105" cy="475" r="5" class="pad"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.1s" repeatCount="indefinite"/></circle>
+    <line x1="1075" y1="475" x2="1100" y2="475" class="trace"/>
+    <text x="875" y="481" class="pinnum">15</text>
+    <text x="915" y="481" class="pinlabel">VLSI</text>
+
+    <circle cx="1105" cy="510" r="5" class="pad"><animate attributeName="opacity" values="1;0.4;1" dur="1.9s" repeatCount="indefinite"/></circle>
+    <line x1="1075" y1="510" x2="1100" y2="510" class="trace"/>
+    <text x="875" y="516" class="pinnum">16</text>
+    <text x="915" y="516" class="pinlabel">EMBEDDED</text>
+
+    <circle cx="1105" cy="545" r="5" class="pad"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.3s" repeatCount="indefinite"/></circle>
+    <line x1="1075" y1="545" x2="1100" y2="545" class="trace"/>
+    <text x="875" y="551" class="pinnum">17</text>
+    <text x="915" y="551" class="pinlabel">ROBOTICS</text>
+
+    <circle cx="1105" cy="580" r="5" class="pad"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+    <line x1="1075" y1="580" x2="1100" y2="580" class="trace"/>
+    <text x="875" y="586" class="pinnum">18</text>
+    <text x="915" y="586" class="pinlabel">DIGITAL ELECTRONICS</text>
+
+    <circle cx="1105" cy="615" r="5" class="pad"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+    <line x1="1075" y1="615" x2="1100" y2="615" class="trace"/>
+    <text x="875" y="621" class="pinnum">19</text>
+    <text x="915" y="621" class="pinlabel">IOT</text>
+  </g>
+
+  <!-- connecting traces from chip to groups -->
+  <path class="trace" d="M470,85 H350 V245 H125" opacity="0.35"/>
+  <path class="trace-cyan" d="M730,85 H1075 V245" opacity="0.35"/>
+  <path class="trace" d="M730,110 H1075 V475" opacity="0.35"/>
+
+  <!-- NC pin footer -->
+  <text x="600" y="690" text-anchor="middle" class="note">NC (No Connect) — PIN 20 — reserved for next skill acquired</text>
+
+</svg>
