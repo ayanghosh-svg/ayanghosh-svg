@@ -32,7 +32,32 @@
 
 ---
 
-## `§2` PIN CONFIGURATION
+## `§2` SCHEMATIC DIAGRAM
+
+<div align="center">
+
+```
+      VCC (Curiosity)
+        │
+        ▼
+   ┌────┴────┐        ┌──────────┐        ┌───────────┐
+   │  INPUT  │        │  CORE    │        │  OUTPUT   │
+   │ STAGE   ├───────►│  LOGIC   ├───────►│  STAGE    │
+   │(Learning)│        │(ECE + CS)│        │(Projects) │
+   └────┬────┘        └────┬─────┘        └─────┬─────┘
+        │                  │                     │
+       ═╪═ R1            ═╪═ C1                 ═╪═ LED
+       GND              (buffer:               (output
+                          coffee)                indicator)
+                                                    │
+                                                   GND
+```
+
+</div>
+
+---
+
+## `§3` PIN CONFIGURATION
 
 <div align="center">
 
@@ -59,23 +84,42 @@
 
 ---
 
-## `§3` ELECTRICAL CHARACTERISTICS (GitHub Stats)
+## `§4` RESISTOR COLOR CODE — SKILL TOLERANCE
+
+<div align="center">
+
+| Band Colors | Skill | Value | Tolerance |
+|---|---|---|---|
+| 🟫🟥🟨 | Java | Core | ±5% |
+| 🟨🟪🟧 | Python | Core | ±5% |
+| 🟦⬜🟩 | SQL / MySQL | Core | ±5% |
+| 🟧🟥⬛ | HTML / CSS / JS | Applied | ±10% |
+| 🟩🟫🟥 | Arduino / Embedded | Applied | ±10% |
+| ⬜⬛🟦 | VLSI / Digital Electronics | In Training | ±20% |
+| 🟥⬜🟪 | Robotics / IoT | In Training | ±20% |
+
+</div>
+
+---
+
+## `§5` ELECTRICAL CHARACTERISTICS (GitHub Stats)
 
 <div align="center">
 <img height="165" src="https://github-readme-stats-mu-seven-w0xc68swfu.vercel.app/api?username=ayanghosh-svg&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
 <img height="165" src="https://github-readme-stats-mu-seven-w0xc68swfu.vercel.app/api/top-langs/?username=ayanghosh-svg&layout=compact&theme=tokyonight&hide_border=true" />
 </div>
 
-| Parameter              | Symbol | Min | Typ | Max | Unit          |
-|-------------------------|--------|-----|-----|-----|---------------|
-| Curiosity level          | I_CUR  | 8   | 9.5 | 10  | learners/day  |
-| Coffee-to-code ratio     | K_COF  | 1   | 2   | ∞   | cups/commit   |
-| Hardware-software balance| BAL    | —   | 50  | —   | % / %         |
-| Debug tolerance          | T_DBG  | 2   | 5   | 12  | hrs           |
+| Parameter                | Symbol | Min | Typ | Max | Unit          |
+|---------------------------|--------|-----|-----|-----|---------------|
+| Curiosity level            | I_CUR  | 8   | 9.5 | 10  | learners/day  |
+| Coffee-to-code ratio       | K_COF  | 1   | 2   | ∞   | cups/commit   |
+| Hardware-software balance  | BAL    | —   | 50  | —   | % / %         |
+| Debug tolerance            | T_DBG  | 2   | 5   | 12  | hrs           |
+| Signal-to-noise (focus)    | SNR    | 20  | 35  | 50  | dB            |
 
 ---
 
-## `§4` APPLICATIONS (Focus Areas)
+## `§6` APPLICATIONS (Focus Areas)
 
 ```
 [ VLSI / EMBEDDED SYSTEMS ]──┬──> Digital circuit design, low-level firmware
@@ -93,7 +137,7 @@
 
 ---
 
-## `§5` REVISION HISTORY
+## `§7` REVISION HISTORY
 
 | Rev | Date       | Description                                  |
 |-----|------------|-----------------------------------------------|
@@ -104,15 +148,13 @@
 
 ---
 
-## `§6` ORDERING INFORMATION (Contact)
+## `§8` ORDERING INFORMATION (Connect With Me)
 
 <div align="center">
 
-| Channel | Link |
-|---|---|
-| 🌐 Portfolio | [ayanghosh-svg.github.io](https://ayanghosh-svg.github.io) |
-| 💻 GitHub | [@ayanghosh-svg](https://github.com/ayanghosh-svg) |
-| 🔗 LinkedIn | [ayan-ghosh](https://www.linkedin.com/in/ayan-ghosh-a32b64388/) |
+<a href="https://ayanghosh-svg.github.io"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+<a href="https://github.com/ayanghosh-svg"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/ayan-ghosh-a32b64388/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 </div>
 
@@ -121,7 +163,7 @@
 ```
 ╔══════════════════════════════════════════════════════════════════╗
 ║  END OF DATASHEET — Subject to change without notice (I'm still  ║
-║  learning). For collaboration inquiries, see §6 above.           ║
+║  learning). For collaboration inquiries, see §8 above.           ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
