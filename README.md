@@ -62,19 +62,43 @@
 <div align="center">
 
 ```
-                         ┌─────────────────────┐
-                 JAVA ●──┤ 1                 20 ├──● PYTHON
-                MYSQL ●──┤ 2                 19 ├──● SQL
-                 HTML ●──┤ 3      AYAN-      18 ├──● CSS
-                   JS ●──┤ 4      GHOSH      17 ├──● GIT
-                  GIT ●──┤ 5      ECE-v3     16 ├──● GITHUB
-              VS CODE ●──┤ 6                 15 ├──● ARDUINO
-                  IOT ●──┤ 7                 14 ├──● EMBEDDED
-                VLSI ●──┤ 8                 13 ├──● ROBOTICS
-                      ●──┤ 9                 12 ├──●
-                      ●──┤ 10                11 ├──●
-                         └─────────────────────┘
+                    ┌───────────────────────────┐
+                    │        AYAN-GHOSH          │
+                    │          ECE-v3            │
+                    │      20-PIN DIP PACKAGE     │
+                    └───────────────────────────┘
+
+  GROUP A — LANGUAGES          GROUP B — TOOLS & PLATFORMS
+  ┌─────────────────┐         ┌─────────────────┐
+  │  1 ●── JAVA      │         │ 11 ●── GIT       │
+  │  2 ●── PYTHON    │         │ 12 ●── GITHUB    │
+  │  3 ●── SQL       │         │ 13 ●── VS CODE   │
+  │  4 ●── HTML      │         │ 14 ●── ARDUINO   │
+  │  5 ●── CSS       │         └─────────────────┘
+  │  6 ●── JS        │
+  └─────────────────┘         GROUP C — HARDWARE / EMBEDDED
+                               ┌─────────────────┐
+                               │ 15 ●── VLSI      │
+                               │ 16 ●── EMBEDDED  │
+                               │ 17 ●── ROBOTICS  │
+                               │ 18 ●── DIGITAL   │
+                               │        ELECTRONICS│
+                               │ 19 ●── IOT       │
+                               └─────────────────┘
+
+  NC (No Connect) ── PIN 20 ── reserved for next skill acquired
 ```
+
+</div>
+
+<div align="center">
+
+| Pin Group | Function | Pin Count |
+|---|---|---|
+| A — Languages | Core programming stack | 6 |
+| B — Tools & Platforms | Dev environment & VCS | 4 |
+| C — Hardware / Embedded | ECE domain skills | 5 |
+| NC | Reserved / expandable | 1 |
 
 </div>
 
