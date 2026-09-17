@@ -1,0 +1,102 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .trace { stroke: #00ff9c; stroke-width: 2; fill: none; opacity: 0.55; }
+      .trace-cyan { stroke: #00d4ff; stroke-width: 2; fill: none; opacity: 0.5; }
+      .pad { fill: #00ff9c; }
+      .pad-cyan { fill: #00d4ff; }
+      .chiptext { font-family: 'Courier New', monospace; font-weight: bold; fill: #eafff5; }
+      .subtext { font-family: 'Courier New', monospace; fill: #7de3c8; }
+      .label { font-family: 'Courier New', monospace; fill: #3d5a52; font-size: 11px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- Circuit trace network, left side -->
+  <path class="trace" d="M0,50 H120 V90 H220" />
+  <path class="trace" d="M0,150 H80 V130 H180 V170 H260" />
+  <path class="trace" d="M0,250 H140 V210 H240" />
+  <path class="trace-cyan" d="M0,20 H60 V60 H160" />
+  <path class="trace-cyan" d="M0,280 H100 V240 H200" />
+
+  <!-- Circuit trace network, right side -->
+  <path class="trace" d="M1200,50 H1080 V90 H980" />
+  <path class="trace" d="M1200,150 H1120 V130 H1020 V170 H940" />
+  <path class="trace" d="M1200,250 H1060 V210 H960" />
+  <path class="trace-cyan" d="M1200,20 H1140 V60 H1040" />
+  <path class="trace-cyan" d="M1200,280 H1100 V240 H1000" />
+
+  <!-- pads with pulsing animation -->
+  <circle class="pad" cx="220" cy="90" r="4">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="pad" cx="260" cy="170" r="4">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="pad-cyan" cx="160" cy="60" r="4">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="pad" cx="240" cy="210" r="4">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="pad-cyan" cx="200" cy="240" r="4">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle class="pad" cx="980" cy="90" r="4">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.1s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="pad" cx="940" cy="170" r="4">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.9s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="pad-cyan" cx="1040" cy="60" r="4">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="pad" cx="960" cy="210" r="4">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="pad-cyan" cx="1000" cy="240" r="4">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Central IC chip -->
+  <g filter="url(#glow)">
+    <rect x="310" y="70" width="580" height="160" rx="10" fill="#0f1a14" stroke="#00ff9c" stroke-width="2"/>
+    <!-- chip notch -->
+    <circle cx="330" cy="90" r="5" fill="#00ff9c"/>
+    <!-- pin stubs top -->
+    <line x1="360" y1="70" x2="360" y2="55" stroke="#00ff9c" stroke-width="2"/>
+    <line x1="420" y1="70" x2="420" y2="55" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="480" y1="70" x2="480" y2="55" stroke="#00ff9c" stroke-width="2"/>
+    <line x1="720" y1="70" x2="720" y2="55" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="780" y1="70" x2="780" y2="55" stroke="#00ff9c" stroke-width="2"/>
+    <line x1="840" y1="70" x2="840" y2="55" stroke="#00d4ff" stroke-width="2"/>
+    <!-- pin stubs bottom -->
+    <line x1="360" y1="230" x2="360" y2="245" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="420" y1="230" x2="420" y2="245" stroke="#00ff9c" stroke-width="2"/>
+    <line x1="480" y1="230" x2="480" y2="245" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="720" y1="230" x2="720" y2="245" stroke="#00ff9c" stroke-width="2"/>
+    <line x1="780" y1="230" x2="780" y2="245" stroke="#00d4ff" stroke-width="2"/>
+    <line x1="840" y1="230" x2="840" y2="245" stroke="#00ff9c" stroke-width="2"/>
+
+    <text x="600" y="128" text-anchor="middle" class="chiptext" font-size="40">AYAN GHOSH</text>
+    <text x="600" y="160" text-anchor="middle" class="subtext" font-size="16">SOFTWARE &amp; HARDWARE CO-DESIGN UNIT</text>
+    <text x="600" y="185" text-anchor="middle" class="label" font-size="12">ECE · NARULA INSTITUTE OF TECHNOLOGY · REV v3</text>
+  </g>
+
+  <!-- corner labels -->
+  <text x="20" y="290" class="label">PART NO. AYAN-GHOSH-ECE-v3</text>
+  <text x="1050" y="290" class="label">STATUS: ACTIVE</text>
+</svg>

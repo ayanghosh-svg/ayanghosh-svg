@@ -1,0 +1,13 @@
+<svg viewBox="0 0 1200 28" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .trace {{ stroke: #00ff9c; stroke-width: 2; fill: none; opacity: 0.6; }}
+      .trace-cyan {{ stroke: #00d4ff; stroke-width: 2; fill: none; opacity: 0.5; }}
+      .pad {{ fill: #00ff9c; }}
+    </style>
+  </defs>
+  <rect width="1200" height="28" fill="#0a0e17"/>
+  <line x1="0" y1="14" x2="560" y2="14" class="trace"/>
+  <line x1="640" y1="14" x2="1200" y2="14" class="trace-cyan"/>
+  <circle cx="600" cy="14" r="5" class="pad"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
+</svg>
