@@ -1,22 +1,16 @@
 <div align="center">
 
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                    ║
-║   PART NO.        : AYAN-GHOSH-ECE-v3                             ║
-║   PACKAGE TYPE     : Human, ECE Undergraduate                     ║
-║   FUNCTION         : Software & Hardware Co-Design Unit           ║
-║   MANUFACTURER     : Narula Institute of Technology                ║
-║   STATUS           : ACTIVE — In Development (Year 3 of 4)        ║
-║                                                                    ║
-╚══════════════════════════════════════════════════════════════════╝
-```
+<img src="banner.svg" width="100%" alt="Ayan Ghosh — circuit board banner" />
 
 </div>
 
 <br>
 
-## `§1` GENERAL DESCRIPTION
+<div align="center">
+
+<img src="sec-01.svg" width="100%" alt="General Description" />
+
+</div>
 
 > The **AYAN-GHOSH-ECE-v3** is a dual-domain processing unit engineered to
 > operate across both software and hardware layers. Optimized for embedded
@@ -30,9 +24,15 @@
 ! Note              : Unit is still in active calibration (3rd year, ECE)
 ```
 
----
+<div align="center">
+<img src="divider.svg" width="100%" alt="" />
+</div>
 
-## `§2` SCHEMATIC DIAGRAM
+<div align="center">
+
+<img src="sec-02.svg" width="100%" alt="Schematic Diagram" />
+
+</div>
 
 <div align="center">
 
@@ -55,9 +55,15 @@
 
 </div>
 
----
+<div align="center">
+<img src="divider.svg" width="100%" alt="" />
+</div>
 
-## `§3` PIN CONFIGURATION
+<div align="center">
+
+<img src="sec-03.svg" width="100%" alt="Pin Configuration" />
+
+</div>
 
 <div align="center">
 
@@ -106,9 +112,15 @@
 <img src="https://skillicons.dev/icons?i=java,mysql,py,html,css,js,git,github,vscode,arduino" />
 </div>
 
----
+<div align="center">
+<img src="divider.svg" width="100%" alt="" />
+</div>
 
-## `§4` RESISTOR COLOR CODE — SKILL TOLERANCE
+<div align="center">
+
+<img src="sec-04.svg" width="100%" alt="Resistor Color Code" />
+
+</div>
 
 <div align="center">
 
@@ -124,9 +136,15 @@
 
 </div>
 
----
+<div align="center">
+<img src="divider.svg" width="100%" alt="" />
+</div>
 
-## `§5` ELECTRICAL CHARACTERISTICS (GitHub Stats)
+<div align="center">
+
+<img src="sec-05.svg" width="100%" alt="Electrical Characteristics" />
+
+</div>
 
 <div align="center">
 <img height="165" src="https://github-readme-stats-mu-seven-w0xc68swfu.vercel.app/api?username=ayanghosh-svg&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
@@ -141,9 +159,15 @@
 | Debug tolerance            | T_DBG  | 2   | 5   | 12  | hrs           |
 | Signal-to-noise (focus)    | SNR    | 20  | 35  | 50  | dB            |
 
----
+<div align="center">
+<img src="divider.svg" width="100%" alt="" />
+</div>
 
-## `§6` APPLICATIONS (Focus Areas)
+<div align="center">
+
+<img src="sec-06.svg" width="100%" alt="Applications" />
+
+</div>
 
 ```
 [ VLSI / EMBEDDED SYSTEMS ]──┬──> Digital circuit design, low-level firmware
@@ -159,9 +183,15 @@
 - `[TARGET]` Hackathon deployments and real-world engineering trials
 - `[TARGET]` Open-source contribution history
 
----
+<div align="center">
+<img src="divider.svg" width="100%" alt="" />
+</div>
 
-## `§7` REVISION HISTORY
+<div align="center">
+
+<img src="sec-07.svg" width="100%" alt="Revision History" />
+
+</div>
 
 | Rev | Date       | Description                                  |
 |-----|------------|-----------------------------------------------|
@@ -170,9 +200,15 @@
 | v3  | Year 3 *(current)* | Integrating VLSI, robotics, IoT modules |
 | v4  | Year 4 *(planned)* | Full-stack hardware-software deployment|
 
----
+<div align="center">
+<img src="divider.svg" width="100%" alt="" />
+</div>
 
-## `§8` ORDERING INFORMATION (Connect With Me)
+<div align="center">
+
+<img src="sec-08.svg" width="100%" alt="Ordering Information" />
+
+</div>
 
 <div align="center">
 
