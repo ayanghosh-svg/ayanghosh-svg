@@ -46,6 +46,18 @@
 
 <div align="center">
 
+## `§2B` LIVE SYSTEM STATUS — 3D SCAN VIEW
+
+<img src="live3d.svg" width="100%" alt="Live rotating 3D chip with radar scan and signal monitor" />
+
+</div>
+
+<div align="center">
+<img src="divider.svg" width="100%" alt="" />
+</div>
+
+<div align="center">
+
 <img src="sec-03.svg" width="100%" alt="Pin Configuration" />
 
 </div>
