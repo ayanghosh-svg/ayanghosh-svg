@@ -46,9 +46,9 @@
 
 <div align="center">
 
-## `§2B` LIVE SYSTEM STATUS — 3D SCAN VIEW
+## `§2B` LIVE DATA FLOW MAP
 
-<img src="live3d.svg" width="100%" alt="Live rotating 3D chip with radar scan and signal monitor" />
+<img src="dataflow.svg" width="100%" alt="Live particle data flow into processing core" />
 
 </div>
 

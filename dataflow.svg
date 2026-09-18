@@ -1,0 +1,108 @@
+<svg viewBox="0 0 1200 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#0d1327"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b06bff" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .trace { stroke: #2a3a4a; stroke-width: 2; fill: none; }
+      .label { font-family: 'Courier New', monospace; fill: #eafff5; font-weight: bold; }
+      .sub { font-family: 'Courier New', monospace; fill: #b98bff; }
+      .tag { font-family: 'Courier New', monospace; fill: #3d4a5a; font-size: 13px; }
+      .counter { font-family: 'Courier New', monospace; fill: #00ff9c; font-size: 22px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="640" fill="url(#bg)"/>
+
+  <text x="600" y="45" text-anchor="middle" class="sub" font-size="15">LIVE DATA FLOW — PROCESSING CORE</text>
+
+  <!-- trace paths from 8 nodes converging to center -->
+  <path id="p1" class="trace" d="M100,120 C 300,180 450,220 600,320"/>
+  <path id="p2" class="trace" d="M1100,120 C 900,180 750,220 600,320"/>
+  <path id="p3" class="trace" d="M100,540 C 300,470 450,400 600,320"/>
+  <path id="p4" class="trace" d="M1100,540 C 900,470 750,400 600,320"/>
+  <path id="p5" class="trace" d="M600,100 C 600,180 600,240 600,320"/>
+  <path id="p6" class="trace" d="M600,560 C 600,480 600,420 600,320"/>
+  <path id="p7" class="trace" d="M150,320 C 300,320 450,320 600,320"/>
+  <path id="p8" class="trace" d="M1050,320 C 900,320 750,320 600,320"/>
+
+  <!-- endpoint nodes -->
+  <g font-family="Courier New, monospace" font-size="13" fill="#7de3c8">
+    <circle cx="100" cy="120" r="5" fill="#00ff9c"/><text x="60" y="105">JAVA</text>
+    <circle cx="1100" cy="120" r="5" fill="#00d4ff"/><text x="1050" y="105">PYTHON</text>
+    <circle cx="100" cy="540" r="5" fill="#ffd166"/><text x="55" y="560">ARDUINO</text>
+    <circle cx="1100" cy="540" r="5" fill="#00ff9c"/><text x="1035" y="560">ROBOTICS</text>
+    <circle cx="600" cy="100" r="5" fill="#00d4ff"/><text x="565" y="85">VLSI</text>
+    <circle cx="600" cy="560" r="5" fill="#ffd166"/><text x="530" y="585">EMBEDDED</text>
+    <circle cx="150" cy="320" r="5" fill="#00ff9c"/><text x="60" y="315">SQL</text>
+    <circle cx="1050" cy="320" r="5" fill="#00d4ff"/><text x="1000" y="315">IOT</text>
+  </g>
+
+  <!-- animated particles traveling along each trace, looping -->
+  <circle r="4" fill="#00ff9c"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle>
+  <circle r="4" fill="#00d4ff"><animateMotion dur="3.1s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle>
+  <circle r="4" fill="#ffd166"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></circle>
+  <circle r="4" fill="#00ff9c"><animateMotion dur="3.3s" repeatCount="indefinite"><mpath href="#p4"/></animateMotion></circle>
+  <circle r="4" fill="#00d4ff"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#p5"/></animateMotion></circle>
+  <circle r="4" fill="#ffd166"><animateMotion dur="2.9s" repeatCount="indefinite"><mpath href="#p6"/></animateMotion></circle>
+  <circle r="4" fill="#00ff9c"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#p7"/></animateMotion></circle>
+  <circle r="4" fill="#00d4ff"><animateMotion dur="3.5s" repeatCount="indefinite"><mpath href="#p8"/></animateMotion></circle>
+
+  <!-- second wave of particles on same paths, offset timing for density -->
+  <circle r="3" fill="#eafff5" opacity="0.8"><animateMotion dur="2.6s" begin="1.3s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle>
+  <circle r="3" fill="#eafff5" opacity="0.8"><animateMotion dur="3.1s" begin="1.5s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle>
+  <circle r="3" fill="#eafff5" opacity="0.8"><animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></circle>
+  <circle r="3" fill="#eafff5" opacity="0.8"><animateMotion dur="3.3s" begin="1.6s" repeatCount="indefinite"><mpath href="#p4"/></animateMotion></circle>
+
+  <!-- core glow -->
+  <circle cx="600" cy="320" r="90" fill="url(#coreGlow)">
+    <animate attributeName="r" values="80;100;80" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- core chip hexagon -->
+  <g filter="url(#glow)">
+    <polygon points="600,265 648,292 648,347 600,375 552,347 552,292" fill="#150c2b" stroke="#b06bff" stroke-width="2.5"/>
+    <text x="600" y="315" text-anchor="middle" class="label" font-size="13" fill="#eafff5">AYAN</text>
+    <text x="600" y="330" text-anchor="middle" class="sub" font-size="10">CORE</text>
+  </g>
+
+  <!-- rotating outer hex ring for "processing" feel -->
+  <g transform="translate(600,320)">
+    <animateTransform attributeName="transform" type="rotate" from="0 600 320" to="360 600 320" dur="8s" repeatCount="indefinite"/>
+  </g>
+  <polygon points="600,240 673,280 673,360 600,400 527,360 527,280" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.5" stroke-dasharray="6 8">
+    <animateTransform attributeName="transform" type="rotate" from="0 600 320" to="360 600 320" dur="10s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- live packet counter, cycling digits -->
+  <rect x="470" y="590" width="260" height="36" rx="6" fill="#0f1a14" stroke="#00ff9c" stroke-width="1.2"/>
+  <text x="490" y="614" class="tag" fill="#7de3c8">PACKETS/S</text>
+  <text x="640" y="614" class="counter" text-anchor="end">
+    128
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.24;0.25;1" dur="1.2s" repeatCount="indefinite"/>
+  </text>
+  <text x="640" y="614" class="counter" text-anchor="end" opacity="0">
+    142
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.25;0.49;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+  </text>
+  <text x="640" y="614" class="counter" text-anchor="end" opacity="0">
+    137
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.5;0.74;0.75;1" dur="1.2s" repeatCount="indefinite"/>
+  </text>
+  <text x="640" y="614" class="counter" text-anchor="end" opacity="0">
+    151
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.75;0.99;1" dur="1.2s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="60" y="625" class="tag">DATA FLOW MAP · SVG NATIVE ANIMATION</text>
+</svg>
